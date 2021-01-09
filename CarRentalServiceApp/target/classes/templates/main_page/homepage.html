@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5" xmlns:form="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset=" UTF-8">
+    <title th:text="#{homepage.title.label}"></title>
+    <link rel="stylesheet" href="/css/homepage.css">
+</head>
+<body>
+<!--<h1 th:text="#{name.label}"></h1>-->
+<!--homepage picture and logo-->
+<a th:href="@{'/'}">
+    <img class="logo" src="/img/logo/logo.PNG">
+</a>
+<img class="firstpic" src="/img/luxury-car-service.jpg">
+<img class="secondpic" src="/img/pic2.jpg">
+<!--Select button working with css-->
+<!--<div class="dropdown">-->
+<!--    <button class="dropbtn">Select a type of car</button>-->
+<!--    <div class="dropdown-content">-->
+<!--        <a th:href="@{'/cars/sportcars'}">Sport Car</a>-->
+<!--    </div>-->
+<nav>
+    <a class="btn_menufirst" th:href="@{'/home'}"><span th:text="#{nav.a.home.label}"</a></a>
+    <a class="btn_menusecond" th:href="@{'/cars'}"><span th:text="#{nav.a.cars.label}"</a></a>
+    <a class="btn_menuthird" th:href="@{'/booking'}"><span th:text="#{nav.a.booking.label}"</a></a>
+    <a class="btn_menuforth" th:href="@{'/login'}"><span th:text="#{nav.a.login.label}"</a></a>
+    <a class="btn_menufifth" th:href="@{'/register'}"><span th:text="#{nav.a.register.label}"</a></a>
+</nav>
+</div>
+</body>
+</html>
